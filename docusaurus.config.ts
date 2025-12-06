@@ -56,16 +56,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           type: 'docSidebar',
@@ -74,7 +70,7 @@ const config: Config = {
         },
         
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/abdul-rehan7/Hackathon-I-Physical-AI-Humanoid-Robotics',
           label: 'GitHub',
           position: 'right',
         },
@@ -84,43 +80,33 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Hardware Requirements',
+              to: '/docs/hardware-requirements',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Resources',
           items: [
-            
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'GitHub Repository',
+              href: 'https://github.com/abdul-rehan7/Hackathon-I-Physical-AI-Humanoid-Robotics',
+            },
+            {
+              label: 'Report Issues',
+              href: 'https://github.com/abdul-rehan7/Hackathon-I-Physical-AI-Humanoid-Robotics/issues',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

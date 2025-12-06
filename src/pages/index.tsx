@@ -19,11 +19,6 @@ function HomepageHeader() {
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx(styles.buttonPrimary)}
-              to="/docs/intro">
-              Start Reading
-            </Link>
-            <Link
               className={clsx(styles.buttonSecondary)}
               to="/docs/hardware-requirements">
               Learn More
@@ -100,7 +95,7 @@ function CTA() {
         </p>
         <Link
           className={clsx(styles.ctaButton)}
-          to="/docs/intro">
+          to="/docs/hardware-requirements">
           Begin Learning
         </Link>
       </div>

@@ -17,6 +17,18 @@
   --docusaurus-highlighted-code-line-bg: rgba(102, 126, 234, 0.1);
 }
 
+/* Scroll progress bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: linear-gradient(90deg, #667eea, #8a9dff);
+  z-index: 1100;
+  transition: width 120ms ease-out;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #8a9dff;
@@ -31,8 +43,40 @@
 
 /* Remove Docusaurus branding */
 .navbar__brand {
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.5px;
+  color: inherit;
+}
+
+.navbar__brand:hover {
+  color: #667eea !important;
+}
+
+/* Active navbar item */
+.navbar__item.navbar__link--active {
+  color: #667eea !important;
+}
+
+.navbar__item a.navbar__link--active {
+  color: #667eea !important;
+}
+
+/* Fixed Navbar */
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-color: #0a0a0c !important;
+  z-index: 1000;
+}
+
+/* Add padding to prevent navbar from hiding breadcrumb */
+.docusaurus-mt-lg {
+  margin-top: 60px !important;
+}
+
+.breadcrumbs {
+  margin-top: 60px !important;
 }
 
 .footer__bottom {
@@ -44,6 +88,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0a0c;
+  overflow-x: hidden;
+}
+
+html {
+  background-color: #0a0a0c;
+  overflow-x: hidden;
 }
 
 a {
@@ -70,7 +121,7 @@ a:not(.button):not([class*="button"]):hover {
 
 /* Footer Styling */
 .footer {
-  background: #1B1B1D !important;
+  background: #0a0a0c !important;
   border-top: 1px solid #808080;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -111,4 +162,109 @@ a:not(.button):not([class*="button"]):hover {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 2rem;
   padding-top: 2rem;
+}
+
+/* Active Tab/Topic Styling */
+.tabs__item--active {
+  background-color: rgba(102, 126, 234, 0.1) !important;
+  color: #ffffff !important;
+  border-left: 3px solid #667eea !important;
+  border-radius: 4px;
+  padding-left: calc(1rem - 3px) !important;
+}
+
+.tabs__item--active a {
+  color: #ffffff !important;
+}
+
+/* Inactive tabs */
+.tabs__item {
+  color: #b0b0b0 !important;
+}
+
+.tabs__item a {
+  color: #b0b0b0 !important;
+}
+
+.breadcrumbs__item--active {
+  background-color: #667eea !important;
+  color: #f40404 !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Sidebar active item */
+.menu__link--active {
+  background-color: rgba(102, 126, 234, 0.1) !important;
+  color: #667eea !important;
+  border-left: 3px solid #667eea;
+  padding-left: calc(1rem - 3px) !important;
+}
+
+/* Sidebar inactive items */
+.menu__link {
+  color: #b0b0b0 ;
+}
+
+/* Sidebar category/group headings */
+.menu__caret,
+.menu__list-item-collapsible > a {
+  color: #b0b0b0 !important;
+}
+
+/* Top navigation in chapters */
+.pagination-nav__item a {
+  color: #b0b0b0 !important;
+  border-color: #333333 !important;
+}
+
+.pagination-nav__item a:hover {
+  background-color: rgba(102, 126, 234, 0.1) !important;
+  color: #ffffff !important;
+  border-color: #667eea !important;
+}
+
+/* Breadcrumb navigation */
+.breadcrumbs__link {
+  background-color: transparent !important;
+}
+
+.breadcrumbs__link:hover {
+  color: #667eea !important;
+  background-color: transparent !important;
+}
+
+.breadcrumbs__item--active {
+  color: #667eea !important;
+  background-color: rgba(118, 75, 162, 0.1) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 20px !important;
+}
+
+/* Typography - Headings and Paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff !important;
+}
+
+p {
+  color: #b0b0b0 !important;
+}
+
+/* Table of Contents (Right Sidebar) Active Item */
+.table-of-contents__link--active {
+  background-color: rgba(102, 126, 234, 0.1) !important;
+  color: #ffffff !important;
+  border-left: 3px solid #667eea;
+  padding-left: calc(1rem - 3px) !important;
+  border-radius: 4px;
+}
+
+/* Table of Contents inactive items */
+.table-of-contents__link {
+  color: #b0b0b0 !important;
 }

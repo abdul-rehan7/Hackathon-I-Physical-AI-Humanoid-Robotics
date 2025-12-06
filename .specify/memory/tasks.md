@@ -1,0 +1,63 @@
+# Tasks
+
+## Online Book Content Creation
+
+- [x] T018: Write detailed content for "Topic 1.1" under "Minimum Specifications" in `docs/hardware-requirements.md`
+- [x] T019: Write detailed content for "Topic 1.2" under "Minimum Specifications" in `docs/hardware-requirements.md`
+- [x] T020: Write detailed content for "Topic 2.1" under "Recommended Specifications" in `docs/hardware-requirements.md`
+- [x] T021: Write detailed content for "Topic 2.2" under "Recommended Specifications" in `docs/hardware-requirements.md`
+- [x] T022: Write detailed content for "Topic 3.1" under "Optional Hardware" in `docs/hardware-requirements.md`
+- [x] T023: Write detailed content for "Topic 3.2" under "Optional Hardware" in `docs/hardware-requirements.md`
+- [x] T024: Write detailed content for "Topic 1.1" under "The Modern Robotics Stack" in `docs/book/week-1/index.md`
+- [x] T025: Write detailed content for "Topic 1.2" under "The Modern Robotics Stack" in `docs/book/week-1/index.md`
+- [x] T026: Write detailed content for "Topic 2.1" under "Introduction to ROS 2" in `docs/book/week-1/index.md`
+- [x] T027: Write detailed content for "Topic 2.2" under "Introduction to ROS 2" in `docs/book/week-1/index.md`
+- [x] T028: Write detailed content for "Topic 1.1" under "Creating ROS 2 Packages and Nodes" in `docs/book/week-2/index.md`
+- [x] T029: Write detailed content for "Topic 1.2" under "Creating ROS 2 Packages and Nodes" in `docs/book/week-2/index.md`
+- [x] T030: Write detailed content for "Topic 2.1" under "Services, Actions, and Launch Files" in `docs/book/week-2/index.md`
+- [x] T031: Write detailed content for "Topic 2.2" under "Services, Actions, and Launch Files" in `docs/book/week-2/index.md`
+- [x] T032: Write detailed content for "Topic 1.1" under "Building a Simulated World" in `docs/book/week-3/index.md`
+- [x] T033: Write detailed content for "Topic 1.2" under "Building a Simulated World" in `docs/book/week-3/index.md`
+- [x] T034: Write detailed content for "Topic 2.1" under "Adding and Configuring Robot Models" in `docs/book/week-3/index.md`
+- [x] T035: Write detailed content for "Topic 2.2" under "Adding and Configuring Robot Models" in `docs/book/week-3/index.md`
+- [x] T036: Write detailed content for "Topic 1.1" under "Simulating Cameras, LiDAR, and IMUs" in `docs/book/week-4/index.md`
+- [x] T037: Write detailed content for "Topic 1.2" under "Simulating Cameras, LiDAR, and IMUs" in `docs/book/week-4/index.md`
+- [x] T038: Write detailed content for "Topic 2.1" under "Data Collection and Visualization with RViz" in `docs/book/week-4/index.md`
+- [x] T039: Write detailed content for "Topic 2.2" under "Data Collection and Visualization with RViz" in `docs/book/week-4/index.md`
+- [x] T040: Write detailed content for "Topic 1.1" under "Core Concepts of Isaac Sim" in `docs/book/week-5/index.md`
+- [x] T041: Write detailed content for "Topic 1.2" under "Core Concepts of Isaac Sim" in `docs/book/week-5/index.md`
+- [x] T042: Write detailed content for "Topic 2.1" under "Perception Primitives and GEMs" in `docs/book/week-5/index.md`
+- [x] T043: Write detailed content for "Topic 2.2" under "Perception Primitives and GEMs" in `docs/book/week-5/index.md`
+- [x] T044: Write detailed content for "Topic 1.1" under "Object Detection and Recognition" in `docs/book/week-6/index.md`
+- [x] T045: Write detailed content for "Topic 1.2" under "Object Detection and Recognition" in `docs/book/week-6/index.md`
+- [x] T046: Write detailed content for "Topic 2.1" under "Pose Estimation and 3D Reconstruction" in `docs/book/week-6/index.md`
+- [x] T047: Write detailed content for "Topic 2.2" under "Pose Estimation and 3D Reconstruction" in `docs/book/week-6/index.md`
+- [x] T048: Write detailed content for "Topic 1.1" under "The ROS 2 Navigation Stack (Nav2)" in `docs/book/week-7/index.md`
+- [x] T049: Write detailed content for "Topic 1.2" under "The ROS 2 Navigation Stack (Nav2)" in `docs/book/week-7/index.md`
+- [x] T050: Write detailed content for "Topic 2.1" under "SLAM and Localization" in `docs/book/week-7/index.md`
+- [x] T051: Write detailed content for "Topic 2.2" under "SLAM and Localization" in `docs/book/week-7/index.md`
+- [x] T052: Write detailed content for "Topic 1.1" under "Kinematics and Inverse Kinematics" in `docs/book/week-8/index.md`
+- [x] T053: Write detailed content for "Topic 1.2" under "Kinematics and Inverse Kinematics" in `docs/book/week-8/index.md`
+- [x] T054: Write detailed content for "Topic 2.1" under "Introduction to MoveIt" in `docs/book/week-8/index.md`
+- [x] T055: Write detailed content for "Topic 2.2" under "Introduction to MoveIt" in `docs/book/week-8/index.md`
+- [x] T056: Write detailed content for "Topic 1.1" under "LLMs for Task Planning" in `docs/book/week-9/index.md`
+- [x] T057: Write detailed content for "Topic 1.2" under "LLMs for Task Planning" in `docs/book/week-9/index.md`
+- [x] T058: Write detailed content for "Topic 2.1" under "Prompt Engineering for Robotic Control" in `docs/book/week-9/index.md`
+- [x] T059: Write detailed content for "Topic 2.2" under "Prompt Engineering for Robotic Control" in `docs/book/week-9/index.md`
+- [x] T060: Write detailed content for "Topic 1.1" under "Understanding Multimodal Inputs" in `docs/book/week-10/index.md`
+- [x] T061: Write detailed content for "Topic 1.2" under "Understanding Multimodal Inputs" in `docs/book/week-10/index.md`
+- [x] T062: Write detailed content for "Topic 2.1" under "VLMs for Scene Interpretation" in `docs/book/week-10/index.md`
+- [x] T063: Write detailed content for "Topic 2.2" under "VLMs for Scene Interpretation" in `docs/book/week-10/index.md`
+- [x] T064: Write detailed content for "Topic 1.1" under "Connecting Perception, Planning, and Action" in `docs/book/week-11/index.md`
+- [x] T065: Write detailed content for "Topic 1.2" under "Connecting Perception, Planning, and Action" in `docs/book/week-11/index.md`
+- [x] T066: Write detailed content for "Topic 2.1" under "State Machines and Behavior Trees" in `docs/book/week-11/index.md`
+- [x] T067: Write detailed content for "Topic 2.2" under "State Machines and Behavior Trees" in `docs/book/week-11/index.md`
+- [x] T068: Write detailed content for "Topic 1.1" under "Project Scoping and Setup" in `docs/book/week-12/index.md`
+- [x] T069: Write detailed content for "Topic 1.2" under "Project Scoping and Setup" in `docs/book/week-12/index.md`
+- [x] T070: Write detailed content for "Topic 2.1" under "Implementing the Perception and Planning Pipeline" in `docs/book/week-12/index.md`
+- [x] T071: Write detailed content for "Topic 2.2" under "Implementing the Perception and Planning Pipeline" in `docs/book/week-12/index.md`
+- [x] T072: Write detailed content for "Topic 1.1" under "Implementing Navigation and Manipulation" in `docs/book/week-13/index.md`
+- [x] T073: Write detailed content for "Topic 1.2" under "Implementing Navigation and Manipulation" in `docs/book/week-13/index.md`
+- [x] T074: Write detailed content for "Topic 2.1" under "Final System Demonstration and Evaluation" in `docs/book/week-13/index.md`
+- [x] T075: Write detailed content for "Topic 2.2" under "Final System Demonstration and Evaluation" in `docs/book/week-13/index.md`
+

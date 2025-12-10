@@ -16,11 +16,21 @@
 - Docusaurus (static site generator)
 - Markdown/MDX for content creation
 - Potential external libraries for code examples (e.g., ROS 2, NVIDIA Isaac SDK, PyTorch, TensorFlow)
+- **RAG Chatbot Integration:**
+    - FastEmbed (for embedding generation)
+    - Qdrant (for vector database)
+    - Gemini API (for LLM backend)
+    - FastAPI (for API server)
 
 ## 2. Key Decisions and Rationale
 - **Technology Stack:** Docusaurus was chosen for its ease of use, Markdown-first approach, and excellent documentation features, making it suitable for an online book format.
 - **Content Structure:** Weekly modules provide a structured learning path, breaking down complex topics into manageable chunks.
 - **Placeholder Strategy:** Initial content placeholders (e.g., "Topic 1.1") were used to quickly establish the structure and facilitate task generation.
+- **RAG Chatbot Architecture:**
+    - **Embedding Model:** The vectorization pipeline must use the **FastEmbed** Python library (specifically the default 'BAAI/bge-small-en-v1.5' or 'all-MiniLM-L6-v2') to generate vectors. The task must explicitly install `qdrant-client[fastembed]` for native integration.
+    - **LLM Backend:** The RAG final answer generation must use the **Gemini API** (specifically the **gemini-2.5-flash-lite** model) for the LLM component to ensure free-tier usage.
+    - **Authentication:** The FastAPI server must securely consume the **`GEMINI_API_KEY`** and the **`QDRANT_API_KEY`/`QDRANT_URL`** from environment variables for all API calls.
+    - **RAG Flow:** The FastAPI endpoint must receive the user query, use **FastEmbed** to vectorize it, retrieve context from **Qdrant**, and then prompt the **Gemini LLM** with the context for a final, sourced answer.
 
 ## 3. Interfaces and API Contracts
 - Not applicable for a static online book. Content will be rendered directly from Markdown/MDX files.

@@ -1,0 +1,100 @@
+.chatToggleButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.chatWindow {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: var(--ifm-background-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--ifm-color-primary-dark);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chatHeader h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.chatMessages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  align-self: flex-start;
+}
+
+.chatInput {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.chatInput input {
+  flex-grow: 1;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.chatInput button {
+  margin-left: 10px;
+  border: none;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.error {
+  background-color: var(--ifm-color-danger-background);
+  color: var(--ifm-color-danger-contrast-foreground);
+  border: 1px solid var(--ifm-color-danger);
+}

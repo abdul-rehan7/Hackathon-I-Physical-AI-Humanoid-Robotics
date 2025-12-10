@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import type {Props} from '@theme/Root';
+import Chatbot from './Chatbot';
 
 function ScrollProgressBar(): React.ReactElement | null {
   const barRef = useRef<HTMLDivElement | null>(null);
@@ -37,6 +38,7 @@ export default function Root({children}: Props): React.ReactElement {
     <>
       <ScrollProgressBar />
       {children}
+      <Chatbot />
     </>
   );
 }

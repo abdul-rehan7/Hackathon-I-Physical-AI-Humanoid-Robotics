@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
   }
 
   .heroContent {
@@ -109,7 +109,7 @@
   }
 
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .heroSubtitle {
@@ -123,8 +123,10 @@
 
   .buttonPrimary,
   .buttonSecondary {
-    width: 100%;
+    width: 60%;
+    max-width: 250px;
     text-align: center;
+    margin: 0 auto;
   }
 
   .heroIllustration {

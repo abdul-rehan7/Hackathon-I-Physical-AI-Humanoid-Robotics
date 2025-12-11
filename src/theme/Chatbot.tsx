@@ -82,14 +82,14 @@ const Chatbot = () => {
 
   return (
     <>
-      <button className={styles.chatToggleButton} onClick={toggleChat}>
-        Chat
+      <button className={styles.chatToggleButton} onClick={toggleChat} title="Open chatbot">
+        {isOpen ? '✕' : '💬'}
       </button>
       {isOpen && (
         <div className={styles.chatWindow}>
           <div className={styles.chatHeader}>
-            <h2>Chatbot</h2>
-            <button onClick={toggleChat}>Close</button>
+            <h2>AI Assistant</h2>
+            <button className={styles.closeButton} onClick={toggleChat} title="Close">✕</button>
           </div>
           <div className={styles.chatMessages}>
             {messages.map((msg, index) => (

@@ -15,11 +15,8 @@ const Chatbot = () => {
       // In local dev, point to FastAPI backend
       return 'http://localhost:8000/api/chat';
     }
-    if (typeof window !== 'undefined' && window.location.origin.includes('vercel.app')) {
-      // On Vercel, use same domain for API
-      return 'https://physical-ai-humanoid-robotics-taupe.vercel.app/api/chat';
-    }
-    return typeof window !== 'undefined' ? `${window.location.origin}/api/chat` : 'http://localhost:8000/api/chat';
+    // Default to Hugging Face Space backend
+    return 'https://mirza-rehan76-rag-chatbot.hf.space/api/chat';
   })();
   const messagesEndRef = useRef(null);
 

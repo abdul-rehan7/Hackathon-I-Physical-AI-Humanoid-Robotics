@@ -82,9 +82,8 @@ def chat(request: ChatRequest):
             if not hit.payload:
                 continue
             text = hit.payload.get("text", "")
-            source = hit.payload.get("source", "unknown")
             if text:
-                context.append(f"[Source: {source}]\n{text}")
+                context.append(text)
     except Exception as e:
         logger.error(f"Error retrieving context from Qdrant: {e}", exc_info=True)
         return ChatResponse(response="Sorry, there was an error retrieving information.")
@@ -99,7 +98,6 @@ def chat(request: ChatRequest):
     prompt = f"""
 You are a helpful assistant for the book "Physical AI & Humanoid Robotics" (The Guide to Modern Agentic Development).
 Answer ONLY from the context below; if the answer is not there, say you don't know.
-Always cite the source paths provided in the context.
 
 Context:
 {context_str}
